@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondopokemon">
+
+    <ImageView
+        android:id="@+id/imageConfirmacion"
+        android:layout_width="156dp"
+        android:layout_height="252dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.942"
+        app:srcCompat="@drawable/charmander"
+        android:contentDescription="@string/mi_pokemon" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/buttonSI"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#8BC34A"
+            android:fontFamily="@font/pkmndp_peter_o_and_mr_gela"
+            android:text="@string/Si"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp"
+            app:iconTint="#FFFFFF"
+            app:rippleColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/buttonNO"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#FD0335"
+            android:fontFamily="@font/pkmndp_peter_o_and_mr_gela"
+            android:text="@string/No"
+            android:textColor="#FFFFFF"
+            android:textSize="58sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
